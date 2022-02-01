@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+</head>
+<style>
+    .main{
+        background: linear-gradient(to right, #ffffff 0%, #0000cc 100%);
+        display: flex;
+    }
+    .header{
+        padding-top: 25px;
+        padding-left: 850px;
+    }
+    img{
+        height: 60px;
+        margin-left: 15px;
+        margin-top: 7px;
+    }
+    a{
+        color: black;
+    }
+    body{
+        margin: 0%;
+        background: linear-gradient(to bottom, #cc0099 0%, #9900cc 100%);
+    }
+    h1{
+            font-size: 72px;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+</style>
+<body>
+    <div class="main">
+        <div>
+        <img src="{% static 'images/logo.png' %}" alt="">
+        </div>
+        <div class="header">
+        <a href="home.html"> <b> HOME</b></a> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <a href="about.html"><b>ABOUT</b></a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <a href="contact.html"><b>CONTACT</b></a>&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+        <a href="signup.html"><b>SIGN UP</b></a>
+        </div>
+    </div>
+    <center><h1> VQ RATION SHOP </h1>
+    <br><br><br>
+    <p><b> Virtual queuing system for ration shop using app is <br>
+     application software developed to overcome the <br> 
+     uncertanities in ration cenzer.</b>
+    </p>
+    <br>
+   <button type="login"><b>LOGIN</b></button>
+    </center>
+</body>
+</html>

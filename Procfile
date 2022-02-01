@@ -1,0 +1,1 @@
+web: gunicorn vqrationprjct.wsgi --log-file -
